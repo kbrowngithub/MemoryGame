@@ -70,14 +70,14 @@ class App extends Component {
     this.state.friends.forEach(friend => {
       if (friend.id === id) {
         if (friend.selected) {
-          status = "You Lost!";
+          status = "You Lost - Click a card to play again!";
           score = 0;
           this.reset();
         } else {
           friend.selected = true;
           status = "Good Guess!";
           score++;
-          (score > topScore) ? topScore = score : topScore = topScore;
+          (score > topScore) ? topScore = score : console.log("score < topScore");
           this.update();
         }
       }
@@ -98,9 +98,7 @@ class App extends Component {
               selectCard={this.selectCard}
               id={friend.id}
               key={friend.id}
-              name={friend.name}
               image={friend.image}
-              occupation={friend.occupation}
               selected={friend.selected}
             />
           ))}

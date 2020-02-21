@@ -1,6 +1,5 @@
 {
   "name": "memorygame",
-  "homepage": "https://github.com/kbrowngithub/MemoryGame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

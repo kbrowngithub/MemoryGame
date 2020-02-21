@@ -1,0 +1,41 @@
+/* .wrapper {
+  padding-top: 50px;
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+} */
+
+/* Start */
+#root,#root>div,body,html{
+    height:100%;
+    margin:0;
+    padding:0
+  }
+  
+  .wrapper{
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/30/15/56/diamonds-335025__340.png");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    /*background-size: cover;  Resize the background image to cover the entire container */
+  
+    
+    display:-ms-flexbox;
+    display:flex;
+    min-height:80%;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -ms-flex-pack:center;
+    justify-content:center;
+    padding-top:100px;
+    padding-bottom:50px;
+    width:100%;
+    margin:0 auto
+  }
+  
