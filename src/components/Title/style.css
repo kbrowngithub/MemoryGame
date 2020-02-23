@@ -26,3 +26,16 @@
   color:#fff;
   font-weight:900
 }
+
+@media (max-width:750px){
+  .click-item{
+    margin:10px
+  }
+}
+  
+@media (max-width:500px){
+  .click-item{
+    margin:10px
+  }
+}
+  

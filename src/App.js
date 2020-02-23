@@ -42,7 +42,7 @@ class App extends Component {
     this.state.friends.forEach(friend => {
       if (friend.id === id) {
         if (friend.selected) {
-          status = "You Lost - Click a card to play again!";
+          status = "You Lost - Try again!";
           score = 0;
           this.reset();
         } else {
