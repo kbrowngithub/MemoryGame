@@ -11,67 +11,31 @@ let status = "Click a card to begin!";
 
 class App extends Component {
   state = {
-    friends,
-    Title
+    friends
   };
 
-  shuffle = (arra1) => {
-    let ctr = arra1.length;
-    let temp;
-    let index;
-
-    // While there are elements in the array
-    while (ctr > 0) {
-      // Pick a random index
-      index = Math.floor(Math.random() * ctr);
-      // Decrease ctr by 1
-      ctr--;
-      // And swap the last element with it
-      temp = arra1[ctr];
-      arra1[ctr] = arra1[index];
-      arra1[index] = temp;
+  // Fisher-Yates Shuffle
+  shuffle = (friends) => {
+    for (let i = friends.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      const temp = friends[i];
+      friends[i] = friends[j];
+      friends[j] = temp;
     }
-    console.log(`shuffle(): returning ${JSON.stringify(arra1)}`);
-    return arra1;
+    this.setState({ friends });
   }
 
+  // Game reset - set all cards to unselected and then shuffle them
   reset = () => {
     const friends = this.state.friends.map(friend => {
-      // console.log(`reset(): friend = ${JSON.stringify(friend)}`);
       friend.selected = false;
       return friend;
     });
-    console.log(`reset(): friends = ${JSON.stringify(friends)}`);
-
     this.shuffle(friends);
-    // // Shuffle the cards
-    // let ctr = friends.length;
-    // let temp;
-    // let index;
-
-    // // While there are elements in the array
-    // while (ctr > 0) {
-    //   // Pick a random index
-    //   index = Math.floor(Math.random() * ctr);
-    //   // Decrease ctr by 1
-    //   ctr--;
-    //   // And swap the last element with it
-    //   temp = friends[ctr];
-    //   friends[ctr] = friends[index];
-    //   friends[index] = temp;
-    // }
-    console.log(`reset(): calling setState with friends = ${JSON.stringify(friends)}`);
-    this.setState({ friends });
   }
 
-  update = () => {
-    const friends = this.state.friends.map(friend => {
-      return friend;
-    });
-    this.shuffle(friends);
-    // this.setState({ Title });
-    this.setState({ friends });
-  }
+  // Just shuffle the cards and keep playing the current game
+  update = () => this.shuffle([...this.state.friends]);
 
   selectCard = id => {
     // Filter this.state.friends for friends with an id equal to the passed in id and evaluate selected status
@@ -91,15 +55,12 @@ class App extends Component {
       }
       return friend;
     });
-
-    // Set this.state.friends equal to the new friends array
-    // this.setState({ friends });
   }
 
   render() {
     return (
       <div>
-        <Title score={score} topScore={topScore} status={status}>Clicky Game</Title>
+        <Title score={score} topScore={topScore} status={status}>Memory Game</Title>
         <Wrapper>
           {this.state.friends.map(friend => (
             <ClickyCard
