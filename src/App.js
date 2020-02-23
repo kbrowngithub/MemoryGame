@@ -43,27 +43,35 @@ class App extends Component {
     });
     console.log(`reset(): friends = ${JSON.stringify(friends)}`);
 
-    // Shuffle the cards
-    let ctr = friends.length;
-    let temp;
-    let index;
+    this.shuffle(friends);
+    // // Shuffle the cards
+    // let ctr = friends.length;
+    // let temp;
+    // let index;
 
-    // While there are elements in the array
-    while (ctr > 0) {
-      // Pick a random index
-      index = Math.floor(Math.random() * ctr);
-      // Decrease ctr by 1
-      ctr--;
-      // And swap the last element with it
-      temp = friends[ctr];
-      friends[ctr] = friends[index];
-      friends[index] = temp;
-    }
+    // // While there are elements in the array
+    // while (ctr > 0) {
+    //   // Pick a random index
+    //   index = Math.floor(Math.random() * ctr);
+    //   // Decrease ctr by 1
+    //   ctr--;
+    //   // And swap the last element with it
+    //   temp = friends[ctr];
+    //   friends[ctr] = friends[index];
+    //   friends[index] = temp;
+    // }
     console.log(`reset(): calling setState with friends = ${JSON.stringify(friends)}`);
     this.setState({ friends });
   }
 
-  update = () => this.setState({ Title });
+  update = () => {
+    const friends = this.state.friends.map(friend => {
+      return friend;
+    });
+    this.shuffle(friends);
+    // this.setState({ Title });
+    this.setState({ friends });
+  }
 
   selectCard = id => {
     // Filter this.state.friends for friends with an id equal to the passed in id and evaluate selected status
@@ -77,7 +85,7 @@ class App extends Component {
           friend.selected = true;
           status = "Good Guess!";
           score++;
-          (score > topScore) ? topScore = score : console.log("score < topScore");
+          (score > topScore) ? topScore = score : console.log(`topScore > score`);
           this.update();
         }
       }
