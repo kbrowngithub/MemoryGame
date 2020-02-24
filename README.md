@@ -14,7 +14,7 @@ a selection the cards are randomly shuffled.
 
 ## App Demo
 ### 
-![Image](https://drive.google.com/file/d/1Vb2Rr0XOivrEO35iMXp3qJJtdDeREAXC/view)
+![Image](public/images/MemoryGameDemo.gif)
 
 ---
 
