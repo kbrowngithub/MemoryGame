@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/kbrowngithub/MemoryGame/static/css/main.d1b05096.chunk.css",
-    "main.js": "/kbrowngithub/MemoryGame/static/js/main.5ae3d95a.chunk.js",
-    "main.js.map": "/kbrowngithub/MemoryGame/static/js/main.5ae3d95a.chunk.js.map",
-    "runtime-main.js": "/kbrowngithub/MemoryGame/static/js/runtime-main.4f45ccfc.js",
-    "runtime-main.js.map": "/kbrowngithub/MemoryGame/static/js/runtime-main.4f45ccfc.js.map",
-    "static/js/2.da652c0e.chunk.js": "/kbrowngithub/MemoryGame/static/js/2.da652c0e.chunk.js",
-    "static/js/2.da652c0e.chunk.js.map": "/kbrowngithub/MemoryGame/static/js/2.da652c0e.chunk.js.map",
-    "index.html": "/kbrowngithub/MemoryGame/index.html",
-    "precache-manifest.ef57e27de9cc484a7e429f2c10eab99b.js": "/kbrowngithub/MemoryGame/precache-manifest.ef57e27de9cc484a7e429f2c10eab99b.js",
-    "service-worker.js": "/kbrowngithub/MemoryGame/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/kbrowngithub/MemoryGame/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.da652c0e.chunk.js.LICENSE.txt": "/kbrowngithub/MemoryGame/static/js/2.da652c0e.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/kbrowngithub/MemoryGame/static/media/logo.5d5d9eef.svg"
+    "main.css": "/MemoryGame/static/css/main.e6f9bd58.chunk.css",
+    "main.js": "/MemoryGame/static/js/main.bfede85a.chunk.js",
+    "main.js.map": "/MemoryGame/static/js/main.bfede85a.chunk.js.map",
+    "runtime-main.js": "/MemoryGame/static/js/runtime-main.dfddbe55.js",
+    "runtime-main.js.map": "/MemoryGame/static/js/runtime-main.dfddbe55.js.map",
+    "static/js/2.6cb39195.chunk.js": "/MemoryGame/static/js/2.6cb39195.chunk.js",
+    "static/js/2.6cb39195.chunk.js.map": "/MemoryGame/static/js/2.6cb39195.chunk.js.map",
+    "index.html": "/MemoryGame/index.html",
+    "precache-manifest.45fc1a5dd1c6e08632ea7f0f8de7fca3.js": "/MemoryGame/precache-manifest.45fc1a5dd1c6e08632ea7f0f8de7fca3.js",
+    "service-worker.js": "/MemoryGame/service-worker.js",
+    "static/css/main.e6f9bd58.chunk.css.map": "/MemoryGame/static/css/main.e6f9bd58.chunk.css.map",
+    "static/js/2.6cb39195.chunk.js.LICENSE.txt": "/MemoryGame/static/js/2.6cb39195.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f45ccfc.js",
-    "static/js/2.da652c0e.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.5ae3d95a.chunk.js"
+    "static/js/runtime-main.dfddbe55.js",
+    "static/js/2.6cb39195.chunk.js",
+    "static/css/main.e6f9bd58.chunk.css",
+    "static/js/main.bfede85a.chunk.js"
   ]
 }
