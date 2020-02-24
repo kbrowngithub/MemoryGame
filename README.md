@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Memory Game :black_joker:
 
-## Available Scripts
+Play Memory Game [here](https://kbrowngithub.github.io/MemoryGame/)
 
-In the project directory, you can run:
+## Overview
+12 playing cards are displayed. Each card is clickable. The object of the game
+is to click each card only once. Player gets 1 point for each card clicked. 
+If a card is clicked more than once the player loses and the Current Score is
+reset to 0 while the highest (top) score achieved is maintained. Both current score 
+and top score are displayed at the top of the page. Each time a player makes
+a selection the cards are randomly shuffled.
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## App Demo
+### 
+![Image](https://drive.google.com/file/d/1Vb2Rr0XOivrEO35iMXp3qJJtdDeREAXC/view)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+This is a React App application and was created using create-react-app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
+- HTML (https://html.spec.whatwg.org/multipage/)
+- Bootstrap/Custom CSS (https://getbootstrap.com/)
+- Create-React-App (https://github.com/facebook/create-react-app)
+- JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Node.js (https://nodejs.org/en/)
+- Deployed on github-pages (https://www.npmjs.com/package/gh-pages)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Process Flow
+![Image](public/images/flowchart.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## If you want to clone the app down to your local machine:
+1. Visit [here](https://rapidapi.com/apidojo/api/tripadvisor1?endpoint=apiendpoint_c0d6decf-e541-447d-bc87-2fa023cd96d6) to set up your own TripAdvisor API key.
+- Create and set up your own ```.env``` file as follows:
+```
+#api keys
+TRIP_KEY=<your api key here>
+```
+- Add your ```.env``` file to your ```.gitignore``` file
+2. Use MySQL Workbench to create a database called ```restaurant_db```
+- The raw SQL query is ```CREATE DATABASE restaurant_db;```
+3. Inside the config folder, open up the ```config.json``` file
+- In the development object, add your MySQL localhost ```password```
+4. In your terminal, ```cd``` into the project folder and run:
+- ```npm install``` to download all node.js dependencies
+- ```npm install sequelize``` to install Sequelize
+5. Finally, you can run the application using:
+- ```node server.js``` in the terminal to start the node server
+- Navigate to localhost:3000 in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Author
+- Kevin Brown - [kbrowngithub](https://github.com/kbrowngithub)
